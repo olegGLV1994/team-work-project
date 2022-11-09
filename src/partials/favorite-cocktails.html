@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Favorite cocktails</title>
+  <link rel="stylesheet" href="../sass/index.scss" />
+</head>
+<body>
+  <header class="header">
+  <div class="header-container container">
+    <nav class="header-navigation">
+      <a href="" class="header-navigation__link">
+        <!-- <img src="./images/logo.png" alt="logo" /> -->
+      </a>
+      <ul class="header-list">
+        <li class="header-list__item">
+          <a href="../index.html" class="header-list__link">Home</a>
+        </li>
+        <li class="header-list__item">
+          <a href="" class="header-list__link js-link-favorite">Favorite</a>
+          <!-- Выпадающий список -->
+          <ul class="header-list-menu visually-hidden">
+            <li class="header-list-menu__item">
+              <a
+                class="header-list-menu__link"
+                href="#"
+                >Favorite cocktails</a
+              >
+            </li>
+            <li class="header-list-menu__item">
+              <a class="header-list-menu__link" href="">Favorite ingredients</a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+    <div class="position-search">
+      <form class="search">
+        <button type="submit" class="btn-search">
+          <!-- <svg width="24" height="24" class="search-icon">
+            <use href="./images/search.svg#icon-bx_search"></use>
+          </svg> -->
+        </button>
+        <input
+          class="input-search"
+          type="text"
+          name="searchQuery"
+          placeholder="Search"
+        />
+      </form>
+      <button class="menu-open" type="button">
+        <!-- <svg class="menu-icon" width="40" height="20">
+          <use href="./images/symbol-defs.svg#icon-menu"></use>
+        </svg> -->
+      </button>
+    </div>
+    <div class="toggle hidden">
+      <input
+        type="checkbox"
+        id="themeSwitch"
+        name="theme-switch"
+        class="theme-switch__input"
+      />
+      <label for="themeSwitch" class="theme-switch__label">
+        <span class="switch"></span>
+      </label>
+    </div>
+  </div>
+</header>
+  <div class="favorite-header"></div>
+  <section class="favorite-cocktails">
+  <h2 class="favorite-cocktails__title">Favorite cocktails</h2>
+  <ul class="coctails__list">
+    <!-- <li class="coctails__item">
+      <img
+        src="./images/mountain-bramble-mob.jpg"
+        alt="Negroni"
+        width="280"
+        class="coctails__image"
+      />
+      <div class="coctails-info">
+        <p class="coctails__name">B-52</p>
+        <div class="coctails__btn">
+          <button type="button" class="info__btn learn-more-btn">
+            Learn more
+          </button>
+          <button type="button" class="info__btn add-to-btn">
+            Add to<svg class="coctails__icon" width="18" height="18">
+              <use href="./images/coctails-icon.svg#disactive-heart"></use>
+            </svg>
+          </button>
+          
+          <button type="button" class="info__btn remove-btn">
+              Remove<svg class="coctails__icon" width="18" height="18">
+                <use href="./images/coctails-icon.svg#active-heart"></use>
+              </svg>
+            </button>
+        </div>
+      </div>
+    </li>
+  </ul> -->
+  <p class="alert-message">You haven't added any favorite cocktails yet</p>
+</section>
+<footer class="footer"></footer>
+</body>
+</html>
+
+

@@ -1,0 +1,152 @@
+// .ingridient-modal.is-ingridient-hidden {
+//   opacity: 0;
+// }
+.ing-modal__backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+  background: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4));
+  opacity: 1;
+  transition: opacity 500ms $timingFunction;
+
+  &.is-ingridient-hidden {
+    z-index: 1;
+    opacity: 0;
+    pointer-events: none;
+  }
+  &.is-ingridient-hidden .ingridient-modal {
+    opacity: 0;
+    transform: translate(-50%, -50%) scale(0.6) rotateY(180deg);
+  }
+}
+
+.ingridient-modal {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  width: 100%;
+  max-height: 100%;
+  min-height: 673px;
+  background-color: $bgColor;
+  padding: 40px 20px;
+  top: 50%;
+  left: 50%;
+
+  transform: translate(-50%, -50%) scale(1) rotateY(0);
+  transition: opacity 2000ms $timingFunction, transform 1000ms $timingFunction;
+  @media screen and (min-width: 768px) {
+    width: 715px;
+    // height: 557px;
+    max-height: 100%;
+    padding: 40px 28px;
+  }
+}
+
+.ingridient-modal__title {
+  margin-bottom: 20px;
+
+  font-family: $ffRoboto;
+  font-weight: 900;
+  font-size: 32px;
+  line-height: 1.18;
+  color: $textColorBlack;
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 28px;
+  }
+}
+
+.ingridient-modal__sub-title {
+  margin-bottom: 20px;
+
+  font-family: $ffPoppins;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.5;
+  text-transform: uppercase;
+
+  color: $textColorBlack;
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 40px;
+  }
+}
+
+.ingridient-modal__line {
+  overflow: hidden;
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 28px;
+    border: 1px solid $accentColor;
+  }
+}
+
+.ingridient-modal__info {
+  margin-bottom: 28px;
+
+  font-family: $ffPoppins;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.75;
+  color: $textColorGray;
+}
+
+.ingridient-modal__info:first-word {
+  font-weight: 600;
+  color: $textColorBlack;
+}
+
+.ingridient-modal__name {
+  font-weight: 600;
+  color: $textColorBlack;
+}
+
+.ingridient-modal__list {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+
+  margin-bottom: 32px;
+
+  &:last-child {
+    margin-bottom: 40px;
+  }
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 40px;
+  }
+}
+
+.ingridient-modal__item {
+  margin-left: 10px;
+  list-style-type: '✶';
+
+  font-family: $ffPoppins;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.6;
+  color: $texttColorBlackModal;
+
+  @media screen and (min-width: 768px) {
+    list-style-type: '✶';
+  }
+}
+
+.ingridient-modal__button {
+  @media screen and (min-width: 768px) {
+    display: flex;
+    justify-content: flex-end;
+  }
+}
+
+.add-to-favorite {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  // position: static;
+
+  text-align: right;
+}

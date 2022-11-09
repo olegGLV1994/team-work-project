@@ -1,0 +1,57 @@
+<header class="header">
+  <div class="header-container container">
+    <nav class="header-navigation">
+      <a href="./index.html" class="header-navigation__link">
+        <img src="./images/logo.png" alt="logo" />
+      </a>
+      <ul class="header-list">
+        <li class="header-list__item">
+          <a href="" class="header-list__link">Home</a>
+        </li>
+        <li class="header-list__item">
+          <a href="" class="header-list__link js-link-favorite">Favorite</a>
+          <!-- Выпадающий список -->
+          <ul class="header-list-menu visually-hidden">
+            <li class="header-list-menu__item">
+              <span class="header-list-menu__link">Favorite cocktails</span>
+            </li>
+            <li class="header-list-menu__item">
+              <span class="header-list-menu__link">Favorite ingredients</span>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+    <div class="position-search">
+      <form class="search">
+        <button type="submit" class="btn-search">
+          <svg width="24" height="24" class="search-icon">
+            <use href="./images/search.svg#icon-bx_search"></use>
+          </svg>
+        </button>
+        <input
+          class="input-search"
+          type="text"
+          name="searchQuery"
+          placeholder="Search"
+        />
+      </form>
+      <button class="menu-open" type="button">
+        <svg class="menu-icon" width="40" height="20">
+          <use href="./images/symbol-defs.svg#icon-menu"></use>
+        </svg>
+      </button>
+    </div>
+    <div class="toggle hidden">
+      <input
+        type="checkbox"
+        id="themeSwitch"
+        name="theme-switch"
+        class="theme-switch__input"
+      />
+      <label for="themeSwitch" class="theme-switch__label">
+        <span class="switch"></span>
+      </label>
+    </div>
+  </div>
+</header>

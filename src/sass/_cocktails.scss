@@ -1,0 +1,362 @@
+.coctails {
+  padding-top: 20px;
+  padding-bottom: 20px;
+
+  @media screen and (min-width: 768px) {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
+
+.coctails__title {
+  margin-bottom: 60px;
+
+  text-align: center;
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 1.9;
+  color: inherit;
+
+  @media screen and (min-width: 768px) {
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 1.3;
+  }
+
+  @media screen and (min-width: 1280px) {
+    font-size: 48px;
+    line-height: 1.5;
+  }
+}
+
+.coctails__list {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+
+  @media screen and (min-width: 768px) {
+    gap: 31px;
+  }
+}
+
+.coctails__item {
+  display: flex;
+  flex-direction: column;
+
+  width: 280px;
+  border: 1px solid $accentColor;
+  border-radius: 4px;
+
+  overflow: hidden;
+  border: 1px solid $accentColor;
+  border-radius: 4px;
+
+  overflow: hidden;
+
+  border: 1px solid $accentColor;
+  border-radius: 4px;
+
+  @media screen and (min-width: 768px) {
+    width: 335px;
+    min-height: 541px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    width: 395px;
+    min-height: 556px;
+  }
+}
+
+.coctails__image {
+  margin-bottom: 48px;
+
+  box-sizing: border-box;
+
+  @media screen and (min-width: 768px) {
+    width: 335px;
+    height: 395px;
+
+    margin-bottom: 20px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    width: 395px;
+    height: 395px;
+  }
+}
+
+.coctails-info {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  padding: 0px 21px 24px 21px;
+
+  @media screen and (min-width: 768px) {
+    padding: 0px 20px 20px 20px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    padding: 0px 28px 28px 28px;
+  }
+}
+
+.coctails__name {
+  flex: 1;
+  margin-bottom: 16px;
+
+  text-align: center;
+  font-weight: 900;
+  font-size: 26px;
+  line-height: 1.6;
+
+  color: inherit;
+
+  @media screen and (min-width: 768px) {
+    font-size: 28px;
+    line-height: 1.14;
+    margin-bottom: 25px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    font-size: 32px;
+    line-height: 1.15;
+    margin-bottom: 27px;
+  }
+}
+
+.coctails__btn {
+  display: flex;
+  gap: 17px;
+
+  @media screen and (min-width: 768px) {
+    gap: 12px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    gap: 16px;
+  }
+}
+
+.info__btn {
+  display: block;
+
+  width: 108px;
+  height: 39px;
+  padding: 7px 16px;
+  cursor: pointer;
+
+  text-align: center;
+  font-family: $ffRoboto;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.7;
+
+  border-radius: 4px;
+  border: none;
+
+  background-color: $buttonColor;
+  color: $textColorWhite;
+
+  @media screen and (min-width: 768px) {
+    width: 160px;
+    height: 48px;
+    padding: 12px 27px;
+
+    font-size: 20px;
+    line-height: 1.2;
+  }
+
+  @media screen and (min-width: 1280px) {
+    width: 182px;
+    height: 48px;
+    padding: 12px 28px;
+  }
+}
+
+.learn-more-btn {
+  display: flex;
+  justify-content: center;
+
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  transition: color 250ms $timingFunction,
+    background-color 250ms $timingFunction;
+
+  &:hover,
+  &:focus {
+    outline: none;
+    color: $accentColor;
+    background-color: #f5f5f5;
+  }
+
+  &:active {
+    color: $textColorWhite;
+    background-color: $accentColor;
+    box-shadow: none;
+  }
+}
+
+.add-to-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  border: 1px solid $accentColor;
+
+  background-color: rgba(0, 0, 0, 0);
+  color: $buttonColor;
+
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+  transition: border 250ms $timingFunction,
+    background-color 250ms $timingFunction;
+
+  &:hover,
+  &:focus {
+    outline: none;
+    border: 2px solid $accentColor;
+    background-color: #f5f5f5;
+  }
+
+  @media screen and (min-width: 768px) {
+    width: 123px;
+    height: 48px;
+    padding: 12px 13px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    width: 141px;
+    height: 48px;
+  }
+}
+
+.remove-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border: 1px solid $accentColor;
+
+  background-color: $textColorWhite;
+  color: $buttonColor;
+  background-color: $textColorWhite;
+  color: $buttonColor;
+
+  @media screen and (min-width: 768px) {
+    width: 123px;
+    height: 48px;
+    padding: 12px 13px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    width: 141px;
+    height: 48px;
+  }
+}
+
+.coctails__icon {
+  fill: currentColor;
+  margin-left: 8px;
+
+  @media screen and (min-width: 768px) {
+    width: 24px;
+    height: 24px;
+    margin-left: 4px;
+  }
+
+  @media screen and (min-width: 768px) {
+    width: 21px;
+    height: 19px;
+    margin-left: 8px;
+  }
+}
+
+.coctails-no-found__title {
+  width: 280px;
+  margin: 20px auto 70px auto;
+
+  font-family: $ffPoppins;
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 1.9;
+  text-align: center;
+
+  color: $textColorBlack;
+
+  @media screen and (min-width: 768px) {
+    width: 331px;
+    margin: 60px auto;
+
+    font-family: $ffRoboto;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 1.3;
+  }
+
+  @media screen and (min-width: 1280px) {
+    width: 493px;
+    margin: 60px auto;
+
+    font-family: $ffPoppins;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 1.5;
+  }
+}
+
+.coctails-no-found__img {
+  margin: auto auto;
+  @media screen and (min-width: 768px) {
+    width: 345px;
+  }
+}
+
+.pagination {
+  margin-top: 32px;
+  display: flex;
+  justify-content: center;
+
+  gap: 12px;
+
+  &__item {
+    font-family: $ffMont;
+    color: inherit;
+    font-size: 16px;
+    line-height: 1.25;
+
+    width: 20px;
+    height: 20px;
+    border: 1px solid $accentColor;
+    border-radius: 50%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    transition: $timingFunction;
+
+    @media screen and (min-width: 768px) {
+      width: 40px;
+      height: 40px;
+    }
+
+    &:hover {
+      background-color: $accentColor;
+      color: $textColorWhite;
+      cursor: pointer;
+    }
+  }
+}
+
+li.pagination__item--active {
+  background-color: $accentColor;
+  color: $textColorWhite;
+}
+
+.heart-disactive {
+  color: $bgColor;
+  background-color: inherit;
+}
+.heart-disactive.dark {
+  color: $textColorBlack;
+}

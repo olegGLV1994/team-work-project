@@ -1,0 +1,279 @@
+.coctails-modal__backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  background: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4));
+  opacity: 1;
+
+  transition: opacity 500ms $timingFunction;
+
+  &.is-close {
+    z-index: 1;
+    opacity: 0;
+    pointer-events: none;
+  }
+  &.is-close .coctails-modal {
+    opacity: 0;
+    transform: translate(-50%, -50%) scale(0.6) rotateY(180deg);
+  }
+}
+
+.coctails-modal {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  background-color: #ffffff;
+  max-height: 100%;
+  width: 100%;
+  top: 50%;
+  left: 50%;
+
+  // position: relative;
+  // width: 320px;
+
+  // min-height: 956px;
+
+  padding: 40px 20px;
+  transform: translate(-50%, -50%) scale(1) rotateY(0);
+  transition: opacity 2000ms $timingFunction, transform 1000ms $timingFunction;
+  @media screen and (min-width: 768px) {
+    flex-direction: row;
+    flex-wrap: wrap;
+    // top: 50%;
+    // left: 50%;
+    // transform: translate(-50%, -50%);
+    width: 100%;
+    max-width: 822px;
+
+    height: 598px;
+
+    padding: 40px 28px;
+  }
+}
+
+.coctails-close-btn {
+  width: 32px;
+  height: 32px;
+  display: block;
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  border: none;
+  background-color: rgba($color: #000000, $alpha: 0);
+  cursor: pointer;
+
+  &:focus {
+    outline-color: $accentColor;
+  }
+
+  @media screen and (min-width: 768px) {
+    top: 12px;
+    right: 12px;
+  }
+}
+
+.modal__icon {
+  display: block;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  fill: $textColorBlack;
+
+  @media screen and (min-width: 768px) {
+    top: 0px;
+    right: 0px;
+  }
+}
+
+.coctails-modal__title {
+  margin-bottom: 20px;
+
+  font-family: $ffRoboto;
+  font-weight: 900;
+  font-size: 32px;
+  line-height: 1.18;
+  color: $textColorBlack;
+
+  @media screen and (min-width: 768px) {
+    position: absolute;
+    top: 40px;
+    left: 288px;
+    order: 2;
+    width: 400px;
+    height: 37px;
+    margin-bottom: 28px;
+    margin-left: 32px;
+
+    color: $texttColorBlackModal;
+  }
+}
+
+.coctails-modal__sub-title {
+  margin-bottom: 20px;
+
+  font-family: $ffPoppins;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.6;
+  text-transform: uppercase;
+  color: $textColorBlack;
+
+  @media screen and (min-width: 768px) {
+    color: $texttColorBlackModal;
+  }
+}
+
+.coctails-modal__instruction {
+  width: 100%;
+  margin-bottom: 32px;
+
+  font-family: $ffPoppins;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.75;
+  color: $textColorGray;
+
+  @media screen and (min-width: 768px) {
+    width: 750px;
+  }
+}
+
+.coctails-modal__img {
+  margin-bottom: 22px;
+
+  border-radius: 4px;
+
+  @media screen and (min-width: 768px) {
+    position: absolute;
+    top: 0;
+    left: 0;
+    order: 1;
+
+    width: 288px;
+    height: 320px;
+  }
+}
+
+.coctails-modal__ingr {
+  margin-bottom: 8px;
+
+  font-family: $ffPoppins;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.6;
+  text-transform: uppercase;
+  color: $textColorBlack;
+
+  @media screen and (min-width: 768px) {
+    color: $texttColorBlackModal;
+  }
+}
+
+.coctails-modal__compound {
+  margin-bottom: 8px;
+
+  font-family: $ffPoppins;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 1.5;
+  color: $textColorBlack;
+
+  @media screen and (min-width: 768px) {
+    display: block;
+  }
+}
+
+.coctails-modal__list {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  margin-bottom: 32px;
+
+  @media screen and (min-width: 768px) {
+    display: block;
+  }
+}
+
+.coctails-modal__item,
+.coct__ingridient {
+  margin-left: 10px;
+  list-style-type: '✶';
+
+  font-family: $ffPoppins;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.6;
+  color: $texttColorBlackModal;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  @media screen and (min-width: 768px) {
+    list-style-type: '✶';
+  }
+}
+
+.add-to-favorite {
+  padding: 12px 24px;
+  cursor: pointer;
+
+  font-family: $ffRoboto;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+
+  border: none;
+  border-radius: 4px;
+
+  color: #fcfcfc;
+  background: $accentColor;
+
+  &:hover,
+  &:focus {
+    outline: none;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  }
+
+  @media screen and (min-width: 768px) {
+    z-index: 1;
+    position: absolute;
+    bottom: 28px;
+    right: 28px;
+    order: 5;
+    color: $textColorWhite;
+  }
+}
+
+.remove-from-favorite {
+  width: 248px;
+}
+
+.remove-order3 {
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 105px;
+    left: 322px;
+    order: 3;
+    width: 400px;
+    height: 191px;
+    // margin-left: 32px;
+  }
+}
+
+.remove-order4 {
+  @media screen and (min-width: 768px) {
+    position: absolute;
+    top: 348px;
+    left: 28px;
+    order: 4;
+  }
+}
+.no-scroll {
+  overflow: hidden;
+}

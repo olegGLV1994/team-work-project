@@ -1,0 +1,41 @@
+<div class="sign-in container visually-hidden">
+  <img src="./images/logo.png" alt="logo" class="sign-in__logo" />
+  <form class="sign-in__form" autocomplete="off">
+    <label for="email" class="sign-in__email">Email</label>
+    <div class="sign-in__icon-container">
+      <span class="sign-in__icon"
+        ><svg width="24px" height="16px" class="sign-in__email-icon">
+          <use href="./images/sign-in.svg#icon-email"></use></svg
+      ></span>
+      <input
+        type="email"
+        name="email"
+        id="email"
+        class="sign-in__email-input"
+        placeholder="email@example.com"
+      />
+    </div>
+    <label for="password" class="sign-in__password">Password</label>
+    <div class="sign-in__icon-container">
+      <span class="sign-in__icon"
+        ><svg width="20px" height="20px" class="sign-in__password-icon">
+          <use href="./images/sign-in.svg#icon-key"></use></svg
+      ></span>
+      <input
+        type="password"
+        name="password"
+        id="password"
+        class="sign-in__password-input"
+        placeholder="*********"
+      />
+    </div>
+    <div class="sign-in__button-container">
+      <button type="submit" class="sign-in__button sign-in-button">
+        Sign in
+      </button>
+      <button type="submit" class="sign-in__button sign-up-button">
+        Sign up
+      </button>
+    </div>
+  </form>
+</div>

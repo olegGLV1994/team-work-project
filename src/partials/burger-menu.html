@@ -1,0 +1,59 @@
+<div class="container-menu visually-hidden">
+  <div class="container-header-menu">
+    <a href="./index.html" class="burger-logo">
+      <img src="./images/logo.png" alt="logo" />
+    </a>
+    <div class="toggle">
+      <label for="themeSwitch" class="theme-switch__label">
+        <input
+          type="checkbox"
+          id="themeSwitch"
+          name="theme-switch"
+          class="theme-switch__input"
+        />
+        <span class="switch"></span>
+      </label>
+    </div>
+  </div>
+  <button type="button" class="btn-vector-burger">
+    <svg width="18" height="18" class="close-burger-menu">
+      <use href="./images/toggle.svg#icon-close"></use>
+    </svg>
+  </button>
+  <form class="search-burger">
+    <button type="submit" class="btn-search-burger">
+      <svg width="24" height="24" class="search-icon-burger">
+        <use href="./images/search.svg#icon-bx_search"></use>
+      </svg>
+    </button>
+    <input
+      class="input-search-burger"
+      type="text"
+      name="searchQuery"
+      placeholder="Search"
+    />
+  </form>
+  <div class="container-list">
+    <ul class="header-list-burger">
+      <li class="header-list-burger__item">
+        <a href="" class="header-list-burger__link">Home</a>
+      </li>
+      <li class="header-list-burger__item">
+        <a href="" class="header-list-burger__link js-burger-favorite"
+          >Favorite
+          <svg class="arrow" width="17" height="10">
+            <use href="./images/toggle.svg#icon-Vector"></use>
+          </svg>
+        </a>
+        <ul class="header-list-burger-menu visually-hidden">
+          <li class="header-list-menu__item">
+            <a class="header-list-burger-menu__link">Favorite cocktails</a>
+          </li>
+          <li class="header-list-menu__item">
+            <a class="header-list-menu__link">Favorite ingredients</a>
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+</div>
